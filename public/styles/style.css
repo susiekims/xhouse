@@ -161,7 +161,7 @@ li {
   list-style-type: none; }
 
 h2 {
-  font-size: 8rem;
+  font-size: 12rem;
   color: black;
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; }
 
@@ -227,6 +227,19 @@ nav a:first-child {
   border-left: 5px solid white;
   border-bottom: 5px solid white;
   transform: rotate(-45deg) translateX(-50%); }
+
+.hxouse-live {
+  padding-top: 20px;
+  position: relative;
+  width: 100vw; }
+
+.hxouse-title {
+  transform: rotate(90deg) translateY(-150%);
+  transform-origin: left top;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 20px; }
 
 footer .flex {
   display: flex;

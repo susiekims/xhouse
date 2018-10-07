@@ -1,0 +1,14 @@
+.hxouse-live {
+	padding-top: 20px;
+	position: relative;
+	width: 100vw;
+}
+
+.hxouse-title {
+	transform: rotate(90deg) translateY(-150%);
+	transform-origin: left top;
+	position: absolute;
+	z-index: -1;
+	right: 0;
+	top: 20px;
+}
