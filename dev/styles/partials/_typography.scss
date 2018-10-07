@@ -1,5 +1,6 @@
 html {
 	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -16,6 +17,10 @@ a {
 
 h2, h3, h4 {
 	text-transform: uppercase;
+}
+
+li {
+	list-style-type: none;
 }
 
 h2 {

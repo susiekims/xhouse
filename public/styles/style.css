@@ -141,7 +141,8 @@ body {
   color: red; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   font-size: 1rem;
@@ -155,6 +156,9 @@ a {
 
 h2, h3, h4 {
   text-transform: uppercase; }
+
+li {
+  list-style-type: none; }
 
 h2 {
   font-size: 8rem;
@@ -190,3 +194,40 @@ li {
   padding: 10px 30px;
   text-transform: uppercase;
   font-weight: bold; }
+
+.wrapper {
+  width: 95%;
+  margin: 0 auto; }
+
+header {
+  width: 100vw;
+  height: 100vh;
+  position: relative; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+nav li {
+  display: inline-block; }
+
+nav a {
+  padding: 0px 15px; }
+
+nav a:first-child {
+  padding-left: 0; }
+
+.arrow div {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  height: 30px;
+  width: 30px;
+  border-left: 5px solid white;
+  border-bottom: 5px solid white;
+  transform: rotate(-45deg) translateX(-50%); }
+
+footer .flex {
+  display: flex;
+  justify-content: space-between; }
