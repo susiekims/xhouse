@@ -1,12 +1,15 @@
 html {
-	font-size: 62.5%;
+	font-size: 50%;
 	scroll-behavior: smooth;
 }
 
 body {
 	font-size: 1rem;
+	font-family: Accidalia;
+	letter-spacing: 0.03rem;
+	// background: #0d0d0d;
 	background: black;
-	color: white;
+	color: #fff;
 	 -webkit-font-smoothing: antialiased;
 }
 
@@ -17,6 +20,11 @@ a {
 
 h2, h3, h4 {
 	text-transform: uppercase;
+	padding: 0;
+}
+
+h2, h3 {
+	font-family: Eurostile;
 }
 
 li {
@@ -24,8 +32,10 @@ li {
 }
 
 h2 {
-	font-size: 12rem;
-	color: black;
+	font-size: 10rem;
+	line-height: 0.8;
+	// display: block;
+	color: #0d0d0d;
 	text-shadow:
     -1px -1px 0 #fff,
     1px -1px 0 #fff,
@@ -35,7 +45,7 @@ h2 {
 
 h5 {
 	font-size: 6rem;
-	color: black;
+	color: #0d0d0d;
 	text-shadow:
     -1px -1px 0 #fff,
     1px -1px 0 #fff,
@@ -50,6 +60,8 @@ h4 {
 
 h3 {
 	font-size: 6rem;
+	line-height: 0.8;
+
 }
 
 p {
@@ -66,10 +78,27 @@ li {
 
 .button {
 	display: inline-block;
+	font-family: Google Sans;
 	font-size: 6rem;
 	background: #fff;
 	color: black;
-	padding: 10px 30px;
+	// padding: 1.5rem 3rem 0rem 3rem;
+	padding: .5rem 4rem;
 	text-transform: uppercase;
 	font-weight: bold;
+}
+
+@font-face {
+	font-family: Eurostile;
+	src: url(../../../public/assets/fonts/EurostileUnicaseLTPro.otf);
+}
+
+@font-face {
+	font-family: Google Sans;
+	src: url(../../../public/assets/fonts/GoogleSans-Bold.ttf);
+}
+
+@font-face {
+	font-family: Accidalia;
+	src: url(../../../public/assets/fonts/URWAccidaliaTMedExt.ttf);
 }

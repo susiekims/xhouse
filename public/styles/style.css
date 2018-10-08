@@ -141,13 +141,15 @@ body {
   color: red; }
 
 html {
-  font-size: 62.5%;
+  font-size: 50%;
   scroll-behavior: smooth; }
 
 body {
   font-size: 1rem;
+  font-family: Accidalia;
+  letter-spacing: 0.03rem;
   background: black;
-  color: white;
+  color: #fff;
   -webkit-font-smoothing: antialiased; }
 
 a {
@@ -155,19 +157,24 @@ a {
   text-decoration: none; }
 
 h2, h3, h4 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding: 0; }
+
+h2, h3 {
+  font-family: Eurostile; }
 
 li {
   list-style-type: none; }
 
 h2 {
-  font-size: 12rem;
-  color: black;
+  font-size: 10rem;
+  line-height: 0.8;
+  color: #0d0d0d;
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; }
 
 h5 {
   font-size: 6rem;
-  color: black;
+  color: #0d0d0d;
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; }
 
 h4 {
@@ -175,7 +182,8 @@ h4 {
   font-size: 1.8rem; }
 
 h3 {
-  font-size: 6rem; }
+  font-size: 6rem;
+  line-height: 0.8; }
 
 p {
   font-size: 3rem; }
@@ -188,12 +196,25 @@ li {
 
 .button {
   display: inline-block;
+  font-family: Google Sans;
   font-size: 6rem;
   background: #fff;
   color: black;
-  padding: 10px 30px;
+  padding: .5rem 4rem;
   text-transform: uppercase;
   font-weight: bold; }
+
+@font-face {
+  font-family: Eurostile;
+  src: url(../../../public/assets/fonts/EurostileUnicaseLTPro.otf); }
+
+@font-face {
+  font-family: Google Sans;
+  src: url(../../../public/assets/fonts/GoogleSans-Bold.ttf); }
+
+@font-face {
+  font-family: Accidalia;
+  src: url(../../../public/assets/fonts/URWAccidaliaTMedExt.ttf); }
 
 .wrapper {
   width: 95%;
@@ -207,7 +228,8 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  padding-top: 20px; }
 
 nav li {
   display: inline-block; }
@@ -228,18 +250,140 @@ nav a:first-child {
   border-bottom: 5px solid white;
   transform: rotate(-45deg) translateX(-50%); }
 
+.g {
+  width: 50px;
+  height: 50px; }
+
+.title {
+  width: 30%;
+  max-width: 600px;
+  min-width: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.chrome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -50%);
+  z-index: -1;
+  width: 60%; }
+
 .hxouse-live {
   padding-top: 20px;
   position: relative;
   width: 100vw; }
+  .hxouse-live .content > * {
+    margin-bottom: 20px; }
+  .hxouse-live .content > *:first-child {
+    margin-bottom: 10px; }
 
 .hxouse-title {
-  transform: rotate(90deg) translateY(-150%);
-  transform-origin: left top;
+  transform: rotate(90deg) translateX(100%);
+  transform-origin: right top;
   position: absolute;
-  z-index: -1;
-  right: 0;
-  top: 20px; }
+  right: 2.5%;
+  top: 20px;
+  z-index: -1; }
+  .hxouse-title h2 {
+    font-size: 20rem; }
+
+.hx1 {
+  width: 70%;
+  margin-bottom: 50px; }
+
+.hx2 {
+  width: 30%;
+  display: inline-block; }
+
+.special-concert {
+  width: 60%;
+  margin: 50px 30% 100px; }
+  .special-concert h3 {
+    margin-bottom: 20px; }
+  .special-concert .button {
+    margin-top: 30px; }
+
+.panel-discussion h2 {
+  font-size: 15rem;
+  margin-bottom: 80px; }
+
+.panel-discussion .column {
+  position: relative;
+  min-width: 300px;
+  height: 550px; }
+  .panel-discussion .column > * {
+    margin-bottom: 30px; }
+  .panel-discussion .column .button {
+    position: absolute;
+    bottom: 0; }
+
+.panel-discussion .column-1 {
+  width: calc(40% - 100px);
+  margin-right: 100px; }
+
+.panel-discussion .column-2 {
+  width: 60%; }
+
+.panel-discussion .content {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30%; }
+
+.program-schedule {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+  .program-schedule .content {
+    display: grid;
+    width: 65%;
+    max-width: 800px;
+    min-width: 300px;
+    grid-template-rows: repeat(auto-fill);
+    grid-template-columns: 2fr 4fr 3fr;
+    grid-gap: 0;
+    align-items: center; }
+  .program-schedule h2 {
+    transform: rotate(90deg) translateX(100%);
+    transform-origin: right top;
+    position: absolute;
+    right: 3%;
+    top: -15px;
+    font-size: 20rem;
+    z-index: -1; }
+  .program-schedule .schedule {
+    margin: 80px 0 80px 30%; }
+    .program-schedule .schedule h3 {
+      margin-bottom: 20px; }
+  .program-schedule .column {
+    width: 30%;
+    min-width: 300px;
+    margin-bottom: 100px; }
+  .program-schedule a {
+    font-size: 3rem; }
+  .program-schedule p {
+    margin: 20px 0px; }
+  .program-schedule .flex {
+    display: flex;
+    flex-wrap: wrap; }
+  .program-schedule .column-2 .flex > div:first-child {
+    margin-right: 50px; }
+  .program-schedule .circle {
+    position: absolute;
+    width: 15%;
+    min-width: 50px;
+    max-width: 200px; }
+
+.dome {
+  width: 75%;
+  max-width: 800px;
+  z-index: -5;
+  margin-bottom: 50px; }
+
+.site-three {
+  width: 150px; }
 
 footer .flex {
   display: flex;

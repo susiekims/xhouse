@@ -1,0 +1,38 @@
+.panel-discussion {
+    h2 {
+        font-size: 15rem;
+        margin-bottom: 80px;
+    }
+
+    .column {
+        position: relative;
+        min-width: 300px;
+        height: 550px;
+
+        &> * {
+            margin-bottom: 30px;
+        } 
+
+
+        .button {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    .column-1 {
+        width: calc(40% - 100px);
+        margin-right: 100px;
+    }
+
+    .column-2 {
+        width: 60%;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        margin-left: 30%;
+    }
+}
+
