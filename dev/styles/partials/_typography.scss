@@ -9,6 +9,7 @@ body {
 	letter-spacing: 0.03rem;
 	// background: #0d0d0d;
 	background: black;
+	/*overflow-wrap: break-word;*/
 	color: #fff;
 	 -webkit-font-smoothing: antialiased;
 }
@@ -85,6 +86,7 @@ li {
 	padding: .5rem 4rem;
 	text-transform: uppercase;
 	font-weight: bold;
+	white-space: nowrap;
 }
 
 @font-face {

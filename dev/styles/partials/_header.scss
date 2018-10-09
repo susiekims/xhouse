@@ -7,12 +7,11 @@ header {
 nav {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 	padding-top: 20px;
 }
 
-nav li {
-	display: inline-block;
+nav ul {
+	display: flex;
 }
 
 nav a {
@@ -48,6 +47,7 @@ nav a:first-child {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
 
 .chrome {
 	position: absolute;

@@ -3,17 +3,27 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="676 -15 1568 247" enable-background="new 676 -15 1568 247" xml:space="preserve">
 <g enable-background="new    ">
-	<text transform="matrix(1 0 0 1 679.2556 90.0184)" font-family="'EurostileUnicaseLTPro'" font-size="149.9991">PANEL</text>
+	<text transform="matrix(1 0 0 1 679.2556 90.0184)" font-family="'Eurostile'" font-size="149.9991">PANEL</text>
 </g>
 <g enable-background="new    ">
 	
-		<text transform="matrix(1 0 0 1 679.2556 90.0184)" fill="none" stroke="#FFFFFF" stroke-width="2" font-family="'EurostileUnicaseLTPro'" font-size="149.9991">PANEL</text>
+		<text transform="matrix(1 0 0 1 679.2556 90.0184)" fill="none" stroke="#FFFFFF" stroke-width="2" font-family="'Eurostile'" font-size="149.9991">PANEL</text>
 </g>
 <g enable-background="new    ">
-	<text transform="matrix(1 0 0 1 679.2556 227.5671)" font-family="'EurostileUnicaseLTPro'" font-size="149.9991">DISCUSSIONS</text>
+	<text transform="matrix(1 0 0 1 679.2556 227.5671)" font-family="'Eurostile'" font-size="149.9991">DISCUSSIONS</text>
 </g>
 <g enable-background="new    ">
 	
-		<text transform="matrix(1 0 0 1 679.2556 227.5671)" fill="none" stroke="#FFFFFF" stroke-width="2" font-family="'EurostileUnicaseLTPro'" font-size="149.9991">DISCUSSIONS</text>
+		<text transform="matrix(1 0 0 1 679.2556 227.5671)" fill="none" stroke="#FFFFFF" stroke-width="2" font-family="'Eurostile'" font-size="149.9991">DISCUSSIONS</text>
 </g>
+
+<defs>
+<style type="text/css">
+	@font-face {
+	font-family: Eurostile;
+	src: url(../../../public/assets/fonts/EurostileUnicaseLTPro.otf);
+}
+</style>
+</defs>
+
 </svg>

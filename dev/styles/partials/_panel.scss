@@ -3,8 +3,8 @@
 
     .column {
         position: relative;
-        min-width: 300px;
-        height: 600px;
+        min-width: 150px;
+        height: 700px;
 
         &> * {
             margin-bottom: 30px;
@@ -17,11 +17,7 @@
         }
     }
 
-    .column-1 {
-        width: 40%;
-    }
-
-    .column-2 {
+    .column {
         width: 40%;
     }
 
@@ -34,7 +30,8 @@
     }
 }
 
-.panel_title {    
+.panel_title {
+    padding-top: 20px;    
     margin-bottom: 80px;
     min-width: 300px;
 }

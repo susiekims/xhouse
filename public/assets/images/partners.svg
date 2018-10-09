@@ -4,6 +4,12 @@
 	 viewBox="130 85 475 49" enable-background="new 130 85 475 49" xml:space="preserve">
 <g enable-background="new    ">
 	
-		<text transform="matrix(1 0 0 1 133 130.945)" fill="none" stroke="#FFFFFF" stroke-width="2" font-family="'EurostileUnicaseLTPro'" font-size="60">PARTNERS</text>
+		<text transform="matrix(1 0 0 1 133 130.945)" fill="none" stroke="#FFFFFF" stroke-width="2" font-family="'Eurostile'" font-size="60">PARTNERS</text>
 </g>
+<style type="text/css">
+	@font-face {
+	font-family: Eurostile;
+	src: url(../../../public/assets/fonts/EurostileUnicaseLTPro.otf);
+}
+</style>
 </svg>

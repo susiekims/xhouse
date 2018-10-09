@@ -149,6 +149,7 @@ body {
   font-family: Accidalia;
   letter-spacing: 0.03rem;
   background: black;
+  /*overflow-wrap: break-word;*/
   color: #fff;
   -webkit-font-smoothing: antialiased; }
 
@@ -201,7 +202,8 @@ li {
   color: black;
   padding: .5rem 4rem;
   text-transform: uppercase;
-  font-weight: bold; }
+  font-weight: bold;
+  white-space: nowrap; }
 
 @font-face {
   font-family: Eurostile;
@@ -222,6 +224,72 @@ li {
   width: 95%;
   margin: 0 auto; }
 
+#nav-icon3 {
+  width: 30px;
+  display: none;
+  height: 22.5px;
+  position: fixed;
+  top: 25px;
+  right: 2.5%;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer; }
+
+#nav-icon3 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  border-radius: 3px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out; }
+
+#nav-icon3 span:nth-child(1) {
+  top: 0px; }
+
+#nav-icon3 span:nth-child(2), #nav-icon3 span:nth-child(3) {
+  top: 9px; }
+
+#nav-icon3 span:nth-child(4) {
+  top: 18px; }
+
+#nav-icon3.open span:nth-child(1) {
+  top: 9px;
+  width: 0%;
+  left: 50%; }
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+#nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%; }
+
 header {
   width: 100vw;
   height: 100vh;
@@ -230,11 +298,10 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding-top: 20px; }
 
-nav li {
-  display: inline-block; }
+nav ul {
+  display: flex; }
 
 nav a {
   padding: 0px 15px; }
@@ -289,6 +356,7 @@ nav a:first-child {
 
 .hxouse-title {
   width: 30%;
+  min-width: 200px;
   position: absolute;
   right: 3%;
   top: 0px; }
@@ -333,16 +401,14 @@ nav a:first-child {
   position: relative; }
   .panel-discussion .column {
     position: relative;
-    min-width: 300px;
-    height: 600px; }
+    min-width: 150px;
+    height: 700px; }
     .panel-discussion .column > * {
       margin-bottom: 30px; }
     .panel-discussion .column .button {
       position: absolute;
       bottom: 0; }
-  .panel-discussion .column-1 {
-    width: 40%; }
-  .panel-discussion .column-2 {
+  .panel-discussion .column {
     width: 40%; }
   .panel-discussion .content {
     display: flex;
@@ -352,6 +418,7 @@ nav a:first-child {
     justify-content: space-between; }
 
 .panel_title {
+  padding-top: 20px;
   margin-bottom: 80px;
   min-width: 300px; }
 
@@ -362,6 +429,7 @@ nav a:first-child {
   right: 3.5%; }
 
 .program-schedule {
+  padding-top: 20px;
   position: relative;
   width: 100%;
   height: 100%; }
@@ -369,7 +437,7 @@ nav a:first-child {
     display: grid;
     width: 65%;
     max-width: 800px;
-    min-width: 300px;
+    min-width: 200px;
     grid-template-rows: repeat(auto-fill);
     grid-template-columns: 2fr 4fr 3fr;
     grid-gap: 0;
@@ -389,15 +457,21 @@ nav a:first-child {
       margin-bottom: 20px; }
   .program-schedule .column {
     width: 30%;
-    min-width: 300px; }
+    min-width: 150px; }
   .program-schedule a {
     font-size: 3rem; }
   .program-schedule p {
     margin: 20px 0px; }
   .program-schedule .flex {
+    width: 100%;
     margin-bottom: 200px; }
-  .program-schedule .column-2 .flex > div:first-child {
-    margin-right: 50px; }
+  .program-schedule .column-1 {
+    margin-right: 10px; }
+  .program-schedule .column-2 > .flex {
+    width: 60%;
+    justify-content: space-between; }
+    .program-schedule .column-2 > .flex div:first-child {
+      margin-right: 20%; }
   .program-schedule .circle {
     position: absolute;
     width: 15%;
@@ -407,7 +481,7 @@ nav a:first-child {
     opacity: .5;
     position: absolute;
     width: 30%;
-    top: 625px;
+    bottom: 60%;
     transform-origin: top left;
     transform: rotate(-90deg); }
   .program-schedule .hx002 {
@@ -433,7 +507,8 @@ nav a:first-child {
   align-items: center;
   margin-bottom: 80px; }
   .partners .wrapper .sticker {
-    width: 200px; }
+    width: 10%;
+    min-width: 80px; }
 
 .google {
   width: 350px;
@@ -479,12 +554,14 @@ footer {
 
 @media (max-width: 1280px) {
   html {
-    font-size: 50%; } }
+    font-size: 50%; }
+  .panel-discussion .column {
+    height: 600px; } }
 
 @media (max-width: 880px) {
   .special-concert {
-    width: 100%;
-    margin-left: 0; } }
+    width: 80%;
+    margin: 100px auto; } }
 
 @media (max-width: 768px) {
   .hxouse-live .content {
@@ -497,11 +574,61 @@ footer {
     margin-left: 0;
     width: 100%; }
   .program-schedule .schedule {
+    width: 50%;
     margin-left: 0; }
+  .program-schedule .column {
+    width: 50%; }
   .button {
-    font-size: 3rem; } }
+    font-size: 3rem; }
+  .circle {
+    top: 0; } }
 
 @media (max-width: 600px) {
   .dome {
     width: 100%;
-    margin: 50px auto; } }
+    margin: 50px auto; }
+  .panel-discussion .column {
+    height: 550px; }
+  #nav-icon3 {
+    display: block;
+    z-index: 2; }
+  nav li {
+    text-align: center;
+    height: calc(100vh / 4);
+    position: relative; }
+    nav li a {
+      font-size: 3rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9); }
+  .program-schedule a {
+    font-size: 2rem; }
+  h3 {
+    font-size: 3rem; } }
+
+@media (max-width: 420px) {
+  p, .button {
+    font-size: 2rem; }
+  .panel-discussion .column {
+    height: 400px;
+    width: 60%; }
+  .program-schedule .content {
+    grid-template-columns: 3fr 4fr 3fr; }
+  .program-schedule .column {
+    width: 100%; }
+  h5 {
+    font-size: 4rem; } }

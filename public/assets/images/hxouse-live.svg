@@ -4,10 +4,16 @@
 	 viewBox="112 -730 440 1677" enable-background="new 112 -730 440 1677" xml:space="preserve">
 <g enable-background="new    ">
 	
-		<text transform="matrix(0 1 -1 0 363.5718 -726.4781)" fill="none" stroke="#FFFFFF" stroke-width="2" font-family="'EurostileUnicaseLTPro'" font-size="269.9983">HXOUSE</text>
+		<text transform="matrix(0 1 -1 0 363.5718 -726.4781)" fill="none" stroke="#FFFFFF" stroke-width="2" font-family="'Eurostile'" font-size="269.9983">HXOUSE</text>
 </g>
 <g enable-background="new    ">
 	
-		<text transform="matrix(0 1 -1 0 115.9842 -726.4781)" fill="none" stroke="#FFFFFF" stroke-width="2" font-family="'EurostileUnicaseLTPro'" font-size="269.9983">LIVE</text>
+		<text transform="matrix(0 1 -1 0 115.9842 -726.4781)" fill="none" stroke="#FFFFFF" stroke-width="2" font-family="'Eurostile'" font-size="269.9983">LIVE</text>
 </g>
+<style type="text/css">
+	@font-face {
+	font-family: Eurostile;
+	src: url(../../../public/assets/fonts/EurostileUnicaseLTPro.otf);
+}
+</style>
 </svg>
