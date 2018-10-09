@@ -1,9 +1,5 @@
 .panel-discussion {
     position: relative;
-    h2 {
-        font-size: 15rem;
-        margin-bottom: 80px;
-    }
 
     .column {
         position: relative;
@@ -36,6 +32,11 @@
         margin-left: 30%;
         justify-content: space-between
     }
+}
+
+.panel_title {    
+    margin-bottom: 80px;
+    min-width: 300px;
 }
 
 .section-2 {

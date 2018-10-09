@@ -259,7 +259,7 @@ nav a:first-child {
 .title {
   width: 30%;
   max-width: 600px;
-  min-width: 150px;
+  min-width: 300px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -284,23 +284,19 @@ nav a:first-child {
   .hxouse-live .content > *:first-child {
     margin-bottom: 10px; }
   .hxouse-live .flex {
-    width: 80%; }
+    width: 80%;
+    height: auto; }
 
 .hxouse-title {
-  transform: rotate(90deg) translateX(100%);
-  transform-origin: right top;
+  width: 30%;
   position: absolute;
   right: 3%;
-  top: 0px;
-  z-index: -1;
-  display: flex; }
+  top: 0px; }
   .hxouse-title h2 {
     font-size: 20rem; }
   .hxouse-title .x33 {
-    transform: rotate(-90deg);
     width: 125px;
-    height: 100px;
-    justify-content: flex-start; }
+    height: 100px; }
 
 .hx1 {
   width: 70%;
@@ -308,10 +304,13 @@ nav a:first-child {
 
 .hx2 {
   width: calc((100% - 10px) / 3);
-  object-fit: contain; }
+  object-fit: contain;
+  height: 100%; }
 
 .hx2-lines {
-  width: 10px; }
+  width: 10px;
+  height: 100%;
+  object-fit: contain; }
 
 .special-concert {
   width: 60%;
@@ -323,8 +322,8 @@ nav a:first-child {
     margin-top: 30px; }
 
 .background {
-  width: 250px;
-  height: 1500px;
+  width: 20vw;
+  height: 100vw;
   position: absolute;
   transform: translate(30px, 45px);
   opacity: 0.3;
@@ -332,9 +331,6 @@ nav a:first-child {
 
 .panel-discussion {
   position: relative; }
-  .panel-discussion h2 {
-    font-size: 15rem;
-    margin-bottom: 80px; }
   .panel-discussion .column {
     position: relative;
     min-width: 300px;
@@ -355,6 +351,10 @@ nav a:first-child {
     margin-left: 30%;
     justify-content: space-between; }
 
+.panel_title {
+  margin-bottom: 80px;
+  min-width: 300px; }
+
 .section-2 {
   width: 10px;
   position: absolute;
@@ -374,14 +374,14 @@ nav a:first-child {
     grid-template-columns: 2fr 4fr 3fr;
     grid-gap: 0;
     align-items: center; }
-  .program-schedule .program-title {
-    transform: rotate(90deg) translateX(100%);
-    transform-origin: right top;
+  .program-schedule .program_title {
+    width: 20%;
+    min-width: 200px;
     position: absolute;
     right: 3%;
     top: -15px;
     z-index: -1; }
-    .program-schedule .program-title h2 {
+    .program-schedule .program_title h2 {
       font-size: 15rem; }
   .program-schedule .schedule {
     margin: 80px 0 80px 30%; }
@@ -389,15 +389,13 @@ nav a:first-child {
       margin-bottom: 20px; }
   .program-schedule .column {
     width: 30%;
-    min-width: 300px;
-    margin-bottom: 200px; }
+    min-width: 300px; }
   .program-schedule a {
     font-size: 3rem; }
   .program-schedule p {
     margin: 20px 0px; }
   .program-schedule .flex {
-    display: flex;
-    flex-wrap: wrap; }
+    margin-bottom: 200px; }
   .program-schedule .column-2 .flex > div:first-child {
     margin-right: 50px; }
   .program-schedule .circle {
@@ -475,14 +473,26 @@ footer {
     height: 15px;
     background: #fff; }
 
+@media (max-width: 2000px) {
+  html {
+    font-size: 62.5%; } }
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 50%; } }
+
 @media (max-width: 880px) {
   .special-concert {
     width: 100%;
     margin-left: 0; } }
 
 @media (max-width: 768px) {
-  h3 {
-    font-size: 4rem; }
+  .hxouse-live .content {
+    width: 50%; }
+  .hxouse-live .flex {
+    width: 100%; }
+  html {
+    font-size: 40%; }
   .panel-discussion .content {
     margin-left: 0;
     width: 100%; }
@@ -490,3 +500,8 @@ footer {
     margin-left: 0; }
   .button {
     font-size: 3rem; } }
+
+@media (max-width: 600px) {
+  .dome {
+    width: 100%;
+    margin: 50px auto; } }

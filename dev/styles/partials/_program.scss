@@ -14,9 +14,9 @@
         align-items: center;
     }
 
-    .program-title {
-        transform: rotate(90deg) translateX(100%);
-        transform-origin: right top;
+    .program_title {
+        width: 20%;
+        min-width: 200px;
         position: absolute;
         right: 3%;
         top: -15px;
@@ -38,8 +38,8 @@
     .column {
         width: 30%;
         min-width: 300px;
-        margin-bottom: 200px;
     }
+
     a {
         font-size: 3rem;
     }
@@ -49,8 +49,7 @@
     }
 
     .flex {
-        display: flex;
-        flex-wrap: wrap;
+       margin-bottom: 200px;
     }
 
     .column-2 .flex > div:first-child {
