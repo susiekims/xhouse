@@ -1,5 +1,6 @@
 const button = document.querySelector('#nav-icon3');
 const nav = document.querySelector("#nav");
+const header = document.getElementsByTagName('header');
 const links = document.getElementsByClassName('nav_link');
 console.log(links);
 
@@ -23,7 +24,8 @@ for (let i = 0; i < links.length; i++) {
 };
 
 window.onresize = function() {
-    document.body.height = window.innerHeight;
+    header.style.height = `${window.innerHeight}px`;
+    nav.style.height = `${window.innerHeight}px`;
 }
 
 window.onresize(); // called to initially set the height

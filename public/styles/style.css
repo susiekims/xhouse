@@ -433,8 +433,7 @@ nav a:first-child {
 .program-schedule {
   padding-top: 20px;
   position: relative;
-  width: 100%;
-  height: 100%; }
+  width: 100%; }
   .program-schedule .content {
     display: grid;
     width: 65%;
@@ -644,7 +643,6 @@ footer {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
     background: rgba(0, 0, 0, 0.9); }
   p, .button {
     font-size: 2rem; }
