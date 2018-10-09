@@ -92,14 +92,19 @@
 		left: 50%;
 	}
 
-
 	.flex.main {
 		flex-direction: column;
+	}
+
+	.disclaimer {
+		position: static;
+		width: 100%;
+		transform: rotate(0deg);
 	}
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 625px) {
 	.dome {
 		width: 100%;
 		margin: 50px auto;

@@ -479,13 +479,14 @@ nav a:first-child {
     width: 15%;
     min-width: 80px;
     max-width: 200px; }
-  .program-schedule .disclaimer {
-    opacity: .5;
-    position: absolute;
-    width: 30%;
-    bottom: 60%;
-    transform-origin: top left;
-    transform: rotate(-90deg); }
+
+.disclaimer {
+  opacity: .5;
+  position: absolute;
+  width: 30%;
+  bottom: 60%;
+  transform-origin: top left;
+  transform: rotate(-90deg); }
 
 .hx002 {
   width: 60px;
@@ -510,7 +511,8 @@ nav a:first-child {
   margin-bottom: 80px; }
   .partners .flex .sticker {
     width: 25%;
-    min-width: 80px; }
+    min-width: 80px;
+    max-width: 150px; }
 
 .google {
   width: 100%;
@@ -602,9 +604,13 @@ footer {
     top: 0;
     left: 50%; }
   .flex.main {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .disclaimer {
+    position: static;
+    width: 100%;
+    transform: rotate(0deg); } }
 
-@media (max-width: 600px) {
+@media (max-width: 625px) {
   .dome {
     width: 100%;
     margin: 50px auto; }

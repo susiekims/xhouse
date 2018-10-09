@@ -78,17 +78,16 @@
         max-width: 200px;
     }
 
-    .disclaimer {
-        opacity: .5;
-        position: absolute;
-        width: 30%;
-        bottom: 60%;
-        transform-origin: top left;
-        transform: rotate(-90deg);
-    }
-
 }
 
+.disclaimer {
+    opacity: .5;
+    position: absolute;
+    width: 30%;
+    bottom: 60%;
+    transform-origin: top left;
+    transform: rotate(-90deg);
+}
 .hx002 {
     width: 60px;
     position: absolute;
