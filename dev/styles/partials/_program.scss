@@ -14,14 +14,17 @@
         align-items: center;
     }
 
-    h2 {
+    .program-title {
         transform: rotate(90deg) translateX(100%);
         transform-origin: right top;
         position: absolute;
         right: 3%;
         top: -15px;
-        font-size: 20rem;
         z-index: -1;
+
+        h2 {
+            font-size: 15rem;
+        }
     }
 
     .schedule {
@@ -60,12 +63,26 @@
         min-width: 50px;
         max-width: 200px;
     }
+
+    .disclaimer {
+        opacity: .5;
+        position: absolute;
+        width: 30%;
+        top: 625px;
+        transform-origin: top left;
+        transform: rotate(-90deg);
+    }
+
+    .hx002 {
+        width: 80px;
+        position: absolute;
+        top: -180px;
+    }
 }
 
 .dome {
     width: 75%;
-    max-width: 800px;
-    z-index: -5;
+    min-width: 200px;
     margin-bottom: 50px;
 }
 

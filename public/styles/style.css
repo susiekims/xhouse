@@ -283,6 +283,8 @@ nav a:first-child {
     margin-bottom: 20px; }
   .hxouse-live .content > *:first-child {
     margin-bottom: 10px; }
+  .hxouse-live .flex {
+    width: 80%; }
 
 .hxouse-title {
   transform: rotate(90deg) translateX(100%);
@@ -305,45 +307,59 @@ nav a:first-child {
   margin-bottom: 50px; }
 
 .hx2 {
-  width: 30%; }
+  width: calc((100% - 10px) / 3);
+  object-fit: contain; }
 
 .hx2-lines {
-  width: 10px;
-  height: 200px; }
+  width: 10px; }
 
 .special-concert {
   width: 60%;
-  margin: 50px 30% 100px; }
+  margin: 50px 30% 100px;
+  z-index: 5; }
   .special-concert h3 {
     margin-bottom: 20px; }
   .special-concert .button {
     margin-top: 30px; }
 
-.panel-discussion h2 {
-  font-size: 15rem;
-  margin-bottom: 80px; }
+.background {
+  width: 250px;
+  height: 1500px;
+  position: absolute;
+  transform: translate(30px, 45px);
+  opacity: 0.3;
+  z-index: -1; }
 
-.panel-discussion .column {
-  position: relative;
-  min-width: 300px;
-  height: 550px; }
-  .panel-discussion .column > * {
-    margin-bottom: 30px; }
-  .panel-discussion .column .button {
-    position: absolute;
-    bottom: 0; }
+.panel-discussion {
+  position: relative; }
+  .panel-discussion h2 {
+    font-size: 15rem;
+    margin-bottom: 80px; }
+  .panel-discussion .column {
+    position: relative;
+    min-width: 300px;
+    height: 600px; }
+    .panel-discussion .column > * {
+      margin-bottom: 30px; }
+    .panel-discussion .column .button {
+      position: absolute;
+      bottom: 0; }
+  .panel-discussion .column-1 {
+    width: calc(40% - 100px);
+    margin-right: 100px; }
+  .panel-discussion .column-2 {
+    width: 40%; }
+  .panel-discussion .content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 30%; }
 
-.panel-discussion .column-1 {
-  width: calc(40% - 100px);
-  margin-right: 100px; }
-
-.panel-discussion .column-2 {
-  width: 60%; }
-
-.panel-discussion .content {
-  display: flex;
-  flex-direction: row;
-  margin-left: 30%; }
+.section-2 {
+  width: 10px;
+  position: absolute;
+  top: 50%;
+  right: 3.5%; }
 
 .program-schedule {
   position: relative;
@@ -358,14 +374,15 @@ nav a:first-child {
     grid-template-columns: 2fr 4fr 3fr;
     grid-gap: 0;
     align-items: center; }
-  .program-schedule h2 {
+  .program-schedule .program-title {
     transform: rotate(90deg) translateX(100%);
     transform-origin: right top;
     position: absolute;
     right: 3%;
     top: -15px;
-    font-size: 20rem;
     z-index: -1; }
+    .program-schedule .program-title h2 {
+      font-size: 15rem; }
   .program-schedule .schedule {
     margin: 80px 0 80px 30%; }
     .program-schedule .schedule h3 {
@@ -388,11 +405,21 @@ nav a:first-child {
     width: 15%;
     min-width: 50px;
     max-width: 200px; }
+  .program-schedule .disclaimer {
+    opacity: .5;
+    position: absolute;
+    width: 30%;
+    top: 625px;
+    transform-origin: top left;
+    transform: rotate(-90deg); }
+  .program-schedule .hx002 {
+    width: 80px;
+    position: absolute;
+    top: -180px; }
 
 .dome {
   width: 75%;
-  max-width: 800px;
-  z-index: -5;
+  min-width: 200px;
   margin-bottom: 50px; }
 
 .site-three {
@@ -432,3 +459,18 @@ footer {
   padding-bottom: 20px; }
   footer .right {
     text-align: right; }
+
+.xxx {
+  width: 100%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px; }
+  .xxx object {
+    height: 10px;
+    margin-right: 50px; }
+  .xxx .block {
+    width: 30px;
+    height: 15px;
+    background: #fff; }

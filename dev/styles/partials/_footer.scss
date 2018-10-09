@@ -10,3 +10,23 @@ footer {
 		text-align: right;
 	}
 }
+
+.xxx {
+    width: 100%;
+    text-align: right;
+    display: flex;
+    align-items: center;
+	justify-content: flex-end;
+	margin-bottom: 20px;
+
+    object {
+        height: 10px;
+        margin-right: 50px;
+    }
+
+    .block {
+        width: 30px;
+        height: 15px;
+        background: #fff;
+    }
+}
