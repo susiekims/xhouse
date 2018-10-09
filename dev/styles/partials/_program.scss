@@ -17,7 +17,8 @@
 
     .program_title {
         width: 20%;
-        min-width: 150px;
+        min-height: 150px;
+        max-width: 500px;
         position: absolute;
         right: 3%;
         top: -15px;
@@ -40,10 +41,6 @@
         width: 30%;
         min-width: 150px;
         margin-bottom: 50px;
-    }
-
-    .flex.main {
-        margin-bottom: 150px;
     }
 
     a {
@@ -80,11 +77,15 @@
 
 }
 
+.flex.main {
+    margin-bottom: 150px;
+}
+
 .disclaimer {
     opacity: .5;
     position: absolute;
-    width: 30%;
-    bottom: 60%;
+    width: 350px;
+    top: 40%;
     transform-origin: top left;
     transform: rotate(-90deg);
 }

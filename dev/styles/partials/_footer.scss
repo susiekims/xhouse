@@ -13,18 +13,17 @@ footer {
 
 .xxx {
     width: 100%;
-    text-align: right;
     display: flex;
     align-items: center;
 	justify-content: flex-end;
 	margin-bottom: 20px;
 
     object {
-        height: 10px;
-        margin-right: 50px;
+        width: 300px;
     }
 
     .block {
+        margin-left: 50px;
         width: 30px;
         height: 15px;
         background: #fff;

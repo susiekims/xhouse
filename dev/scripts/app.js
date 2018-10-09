@@ -11,7 +11,7 @@ button.onclick = function() {
 }
 
 window.addEventListener("resize", function() {
-   if (window.innerWidth > 600) {
+   if (window.innerWidth > 620 ) {
       nav.style.display = "flex";
       button.classList.remove('open');
    } else {

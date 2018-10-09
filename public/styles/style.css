@@ -356,7 +356,8 @@ nav a:first-child {
 
 .hxouse-title {
   width: 30%;
-  min-width: 150px;
+  min-height: 150px;
+  max-width: 500px;
   position: absolute;
   right: 3%;
   top: 0px; }
@@ -444,7 +445,8 @@ nav a:first-child {
     align-items: center; }
   .program-schedule .program_title {
     width: 20%;
-    min-width: 150px;
+    min-height: 150px;
+    max-width: 500px;
     position: absolute;
     right: 3%;
     top: -15px;
@@ -459,8 +461,6 @@ nav a:first-child {
     width: 30%;
     min-width: 150px;
     margin-bottom: 50px; }
-  .program-schedule .flex.main {
-    margin-bottom: 150px; }
   .program-schedule a {
     font-size: 3rem; }
   .program-schedule p {
@@ -480,11 +480,14 @@ nav a:first-child {
     min-width: 80px;
     max-width: 200px; }
 
+.flex.main {
+  margin-bottom: 150px; }
+
 .disclaimer {
   opacity: .5;
   position: absolute;
-  width: 30%;
-  bottom: 60%;
+  width: 350px;
+  top: 40%;
   transform-origin: top left;
   transform: rotate(-90deg); }
 
@@ -544,15 +547,14 @@ footer {
 
 .xxx {
   width: 100%;
-  text-align: right;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   margin-bottom: 20px; }
   .xxx object {
-    height: 10px;
-    margin-right: 50px; }
+    width: 300px; }
   .xxx .block {
+    margin-left: 50px;
     width: 30px;
     height: 15px;
     background: #fff; }
@@ -569,8 +571,8 @@ footer {
 
 @media (max-width: 880px) {
   .special-concert {
-    width: 80%;
-    margin: 100px auto; } }
+    width: 65%;
+    margin: 50px 35%; } }
 
 @media (max-width: 768px) {
   .program-schedule .schedule {
@@ -604,7 +606,8 @@ footer {
     top: 0;
     left: 50%; }
   .flex.main {
-    flex-direction: column; }
+    flex-direction: column;
+    margin-bottom: 50px; }
   .disclaimer {
     position: static;
     width: 100%;
