@@ -486,7 +486,7 @@ footer {
   .panel-discussion .content {
     margin-left: 0;
     width: 100%; }
-  .schedule {
-    margin: 0 auto; }
+  .program-schedule .schedule {
+    margin-left: 0; }
   .button {
     font-size: 3rem; } }
