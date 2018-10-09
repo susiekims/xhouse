@@ -178,7 +178,6 @@ h5 {
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; }
 
 h4 {
-  font-weight: normal;
   font-size: 1.8rem; }
 
 h3 {
@@ -215,6 +214,9 @@ li {
 @font-face {
   font-family: Accidalia;
   src: url(../../../public/assets/fonts/URWAccidaliaTMedExt.ttf); }
+
+.flex {
+  display: flex; }
 
 .wrapper {
   width: 95%;
@@ -275,6 +277,8 @@ nav a:first-child {
   padding-top: 20px;
   position: relative;
   width: 100vw; }
+  .hxouse-live .content {
+    margin-bottom: 100px; }
   .hxouse-live .content > * {
     margin-bottom: 20px; }
   .hxouse-live .content > *:first-child {
@@ -284,19 +288,28 @@ nav a:first-child {
   transform: rotate(90deg) translateX(100%);
   transform-origin: right top;
   position: absolute;
-  right: 2.5%;
-  top: 20px;
-  z-index: -1; }
+  right: 3%;
+  top: 0px;
+  z-index: -1;
+  display: flex; }
   .hxouse-title h2 {
     font-size: 20rem; }
+  .hxouse-title .x33 {
+    transform: rotate(-90deg);
+    width: 125px;
+    height: 100px;
+    justify-content: flex-start; }
 
 .hx1 {
   width: 70%;
   margin-bottom: 50px; }
 
 .hx2 {
-  width: 30%;
-  display: inline-block; }
+  width: 30%; }
+
+.hx2-lines {
+  width: 10px;
+  height: 200px; }
 
 .special-concert {
   width: 60%;
@@ -360,7 +373,7 @@ nav a:first-child {
   .program-schedule .column {
     width: 30%;
     min-width: 300px;
-    margin-bottom: 100px; }
+    margin-bottom: 200px; }
   .program-schedule a {
     font-size: 3rem; }
   .program-schedule p {
@@ -385,6 +398,37 @@ nav a:first-child {
 .site-three {
   width: 150px; }
 
+.partners h2 {
+  font-size: 8rem;
+  margin-bottom: 20px; }
+
+.partners .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px; }
+  .partners .wrapper .sticker {
+    width: 200px; }
+
+.google {
+  width: 350px;
+  margin-bottom: 20px; }
+
+.sponsors {
+  width: 30%; }
+
+.partners-row2 {
+  display: flex;
+  justify-content: space-between; }
+
+.partners-row2 img {
+  height: 30px; }
+
 footer .flex {
   display: flex;
   justify-content: space-between; }
+
+footer {
+  padding-bottom: 20px; }
+  footer .right {
+    text-align: right; }

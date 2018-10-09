@@ -1,0 +1,33 @@
+.partners h2 {
+    font-size: 8rem;
+    margin-bottom: 20px;
+}
+
+.partners .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+
+    .sticker {
+        width: 200px;
+    }
+}
+
+.google {
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+.sponsors {
+    width: 30%;
+}
+
+.partners-row2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.partners-row2 img {
+    height: 30px;
+}

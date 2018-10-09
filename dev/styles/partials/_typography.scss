@@ -54,7 +54,6 @@ h5 {
 }
 
 h4 {
-	font-weight: normal;
 	font-size: 1.8rem;
 }
 
@@ -101,4 +100,8 @@ li {
 @font-face {
 	font-family: Accidalia;
 	src: url(../../../public/assets/fonts/URWAccidaliaTMedExt.ttf);
+}
+
+.flex {
+	display: flex;
 }
