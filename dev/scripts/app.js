@@ -2,7 +2,6 @@ const button = document.querySelector('#nav-icon3');
 const nav = document.querySelector("#nav");
 const header = document.getElementsByTagName('header');
 const links = document.getElementsByClassName('nav_link');
-console.log(links);
 
 button.onclick = function() {
   	button.classList.toggle('open');
@@ -37,4 +36,8 @@ window.addEventListener("resize", function() {
    } else {
    	nav.style.display = "none";
    }
+});
+
+document.addEventListener("DOMContentLoaded", function() { 
+    
 });
