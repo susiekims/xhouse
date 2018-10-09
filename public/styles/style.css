@@ -457,14 +457,16 @@ nav a:first-child {
       margin-bottom: 20px; }
   .program-schedule .column {
     width: 30%;
-    min-width: 150px; }
+    min-width: 150px;
+    margin-bottom: 50px; }
+  .program-schedule .flex.main {
+    margin-bottom: 150px; }
   .program-schedule a {
     font-size: 3rem; }
   .program-schedule p {
     margin: 20px 0px; }
   .program-schedule .flex {
-    width: 100%;
-    margin-bottom: 200px; }
+    width: 100%; }
   .program-schedule .column-1 {
     margin-right: 10px; }
   .program-schedule .column-2 > .flex {
@@ -475,7 +477,7 @@ nav a:first-child {
   .program-schedule .circle {
     position: absolute;
     width: 15%;
-    min-width: 50px;
+    min-width: 80px;
     max-width: 200px; }
   .program-schedule .disclaimer {
     opacity: .5;
@@ -484,10 +486,11 @@ nav a:first-child {
     bottom: 60%;
     transform-origin: top left;
     transform: rotate(-90deg); }
-  .program-schedule .hx002 {
-    width: 80px;
-    position: absolute;
-    top: -180px; }
+
+.hx002 {
+  width: 60px;
+  position: absolute;
+  top: -180px; }
 
 .dome {
   width: 75%;
@@ -501,21 +504,25 @@ nav a:first-child {
   font-size: 8rem;
   margin-bottom: 20px; }
 
-.partners .wrapper {
-  display: flex;
+.partners .flex {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 80px; }
-  .partners .wrapper .sticker {
-    width: 10%;
+  .partners .flex .sticker {
+    width: 25%;
     min-width: 80px; }
 
 .google {
-  width: 350px;
-  margin-bottom: 20px; }
+  width: 100%;
+  margin-bottom: 10px; }
 
 .sponsors {
   width: 30%; }
+
+.partners_title {
+  width: 50%;
+  min-width: 300px;
+  margin-bottom: 20px; }
 
 .partners-row2 {
   display: flex;
@@ -564,6 +571,12 @@ footer {
     margin: 100px auto; } }
 
 @media (max-width: 768px) {
+  .program-schedule .schedule {
+    width: 80%;
+    margin-left: 0; }
+  .wrapper {
+    width: 90%;
+    margin: 0 auto; }
   .hxouse-live .content {
     width: 50%; }
   .hxouse-live .flex {
@@ -573,15 +586,23 @@ footer {
   .panel-discussion .content {
     margin-left: 0;
     width: 100%; }
-  .program-schedule .schedule {
-    width: 50%;
-    margin-left: 0; }
   .program-schedule .column {
     width: 50%; }
   .button {
     font-size: 3rem; }
   .circle {
-    top: 0; } }
+    top: 0; }
+  .sponsors {
+    width: 60%; }
+  .partners-row2 img {
+    height: 20px; }
+  .panel_title {
+    margin-bottom: 20px; }
+  .hx002 {
+    top: 0;
+    left: 50%; }
+  .flex.main {
+    flex-direction: column; } }
 
 @media (max-width: 600px) {
   .dome {
@@ -615,20 +636,23 @@ footer {
     width: 100%;
     height: 100vh;
     background: rgba(0, 0, 0, 0.9); }
+  p, .button {
+    font-size: 2rem; }
+  h5 {
+    font-size: 4rem; }
   .program-schedule a {
     font-size: 2rem; }
   h3 {
     font-size: 3rem; } }
 
 @media (max-width: 420px) {
-  p, .button {
-    font-size: 2rem; }
+  .program-schedule .schedule {
+    width: 50%;
+    margin-left: 0; }
   .panel-discussion .column {
     height: 400px;
     width: 60%; }
   .program-schedule .content {
     grid-template-columns: 3fr 4fr 3fr; }
   .program-schedule .column {
-    width: 100%; }
-  h5 {
-    font-size: 4rem; } }
+    width: 100%; } }

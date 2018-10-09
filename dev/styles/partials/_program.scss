@@ -39,6 +39,11 @@
     .column {
         width: 30%;
         min-width: 150px;
+        margin-bottom: 50px;
+    }
+
+    .flex.main {
+        margin-bottom: 150px;
     }
 
     a {
@@ -51,7 +56,6 @@
 
     .flex {
         width: 100%;
-        margin-bottom: 200px;
     }
 
     .column-1 {
@@ -67,12 +71,10 @@
        }
     }
 
-
-
     .circle {
         position: absolute;
         width: 15%;
-        min-width: 50px;
+        min-width: 80px;
         max-width: 200px;
     }
 
@@ -85,11 +87,12 @@
         transform: rotate(-90deg);
     }
 
-    .hx002 {
-        width: 80px;
-        position: absolute;
-        top: -180px;
-    }
+}
+
+.hx002 {
+    width: 60px;
+    position: absolute;
+    top: -180px;
 }
 
 .dome {

@@ -3,25 +3,30 @@
     margin-bottom: 20px;
 }
 
-.partners .wrapper {
-    display: flex;
+.partners .flex{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 80px;
 
     .sticker {
-        width: 10%;
+        width: 25%;
         min-width: 80px;
     }
 }
 
 .google {
-    width: 350px;
-    margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .sponsors {
     width: 30%;
+}
+
+.partners_title {
+    width: 50%;
+    min-width: 300px;
+    margin-bottom: 20px;
 }
 
 .partners-row2 {
