@@ -7,3 +7,30 @@
 @import 'partials/program';
 @import 'partials/partners';
 @import 'partials/footer';
+
+@media (max-width: 880px) {
+
+    .special-concert {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    h3 {
+        font-size: 4rem;
+    }
+
+    .panel-discussion .content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .schedule {
+        margin: 0 auto;
+    }
+
+    .button {
+        font-size: 3rem;
+    }
+}
