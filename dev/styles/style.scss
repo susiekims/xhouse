@@ -14,12 +14,20 @@
 	html {
 		font-size: 62.5%;
 	}
+
+	.panel-discussion .column {
+		height: 700px;
+	}
 }
 
 
 @media (max-width: 1280px) {
 	html {
 		font-size: 50%;
+	}
+
+	.panel-discussion .column {
+		height: 600px;
 	}
 
 }
@@ -29,10 +37,6 @@
     .special-concert {
         width: 65%;
         margin: 50px 35%;
-	}
-	
-	.panel-discussion .column {
-		height: 700px;
 	}
 }
 

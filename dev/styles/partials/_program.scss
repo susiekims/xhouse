@@ -8,7 +8,7 @@
         display: grid;
         width: 65%;
         max-width: 800px;
-        min-width: 200px;
+        min-width: 300px;
         grid-template-rows: repeat(auto-fill);
         grid-template-columns: 2fr 4fr 3fr;
         grid-gap: 0;
@@ -17,7 +17,7 @@
 
     .program_title {
         width: 20%;
-        min-width: 150px;
+        min-width: 100px;
         max-height: 2000px;
         position: absolute;
         right: 3%;

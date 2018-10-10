@@ -1,5 +1,6 @@
 .panel-discussion {
     position: relative;
+    margin-bottom: 100px;
 
     .column {
         position: relative;
@@ -34,6 +35,13 @@
     padding-top: 20px;    
     margin-bottom: 80px;
     min-width: 300px;
+}
+
+.hx001 {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 40%;
 }
 
 .section-2 {
