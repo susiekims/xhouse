@@ -8,10 +8,13 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	padding-top: 20px;
+	animation: intro-down .8s 1s ease-in-out;
+	animation-fill-mode: both;
 }
 
 nav ul {
 	display: flex;
+	z-index: 100;
 }
 
 nav a {
@@ -31,13 +34,13 @@ nav a:first-child {
 	border-left: 5px solid white;
 	border-bottom: 5px solid white;
 	transform: rotate(-45deg) translate(-50%, 0);
-	animation: float 4s infinite ease-in-out;
-	// animation-fill-mode: both;
+	animation: intro-arrow .8s 1.5s ease-in-out;
+	animation-fill-mode: both;
 }
 
 @keyframes float {
 	0% {
-		bottom: 50px
+		bottom: 50px;
 	}
 
 	10% {
@@ -67,6 +70,9 @@ nav a:first-child {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	animation: intro-up .8s .5s ease-in-out;
+	animation-fill-mode: both;
+	z-index: -1;
 }
 
 
@@ -75,7 +81,43 @@ nav a:first-child {
 	top: 50%;
 	left: 50%;
 	transform: translate(-45%, -50%);
-	z-index: -1;
+	z-index: -2;
 	width: 60%;
 }
 
+@keyframes intro-down {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+
+@keyframes intro-up {
+	0% {
+		opacity: 0;
+		transform: translate(-50%, -40%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(-50%, -50%);
+	}
+}
+
+@keyframes intro-arrow {
+	0% {
+		opacity: 0;
+		bottom: -50px;
+	}
+
+	100% {
+		opacity: 1;
+		bottom: 50px;
+	}
+}
