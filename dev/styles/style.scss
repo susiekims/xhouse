@@ -22,9 +22,6 @@
 		font-size: 50%;
 	}
 
-	.panel-discussion .column {
-		height: 600px;
-	}
 }
 
 
@@ -32,15 +29,23 @@
     .special-concert {
         width: 65%;
         margin: 50px 35%;
-    }
+	}
+	
+	.panel-discussion .column {
+		height: 700px;
+	}
 }
 
 @media (max-width: 768px) {
 
+	.panel-discussion .column {
+		height: 480px;
+	}
+
 	.program-schedule .schedule {
     	width: 80%;
         margin-left: 0;
-    }
+	}
 
 	.wrapper {
 		width: 90%;
@@ -113,17 +118,17 @@
 	}
 
 	.panel-discussion .column {
-		height: 550px;
+		height: 380px;
 	}
 
 	#nav-icon3 {
 		display: block;
-		z-index: 2;
+		z-index: 6;
 	}
 
 	nav li {
 		text-align: center;
-		height: calc(100vh / 4);
+		height: calc(100vh / 12);
 		position: relative;
 
 		a {
@@ -131,6 +136,7 @@
 			position: absolute;
 			top: 50%;
 			left: 50%;
+			width: 100%;
 			transform: translate(-50%, -50%);
 		}
 	}
@@ -139,7 +145,7 @@
 		display: none;
 		flex-direction: column;
 		justify-content: center;
-		z-index: 1;
+		z-index: 5;
 		padding: 0;
 		margin: 0;
 		position: fixed;
@@ -189,5 +195,15 @@
 
 .scroll {
 	opacity: 0;
-	transition: all .8s ease-in-out;
+	transition: transform .5s ease-in-out, opacity .5s ease-in-out;
+}
+
+.scroll2 {
+	opacity: 0;
+	transition: transform .8s ease-in-out, opacity .8s ease-in-out;
+}
+
+.scroll3 {
+	opacity: 0;
+	transition: transform 1.1s ease-in-out, opacity 1.1s ease-in-out;
 }
