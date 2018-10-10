@@ -185,6 +185,9 @@
 	.program-schedule .column {
 		width: 100%;
 	}
+}
 
-	
+.scroll {
+	opacity: 0;
+	transition: all .8s ease-in-out;
 }

@@ -1,7 +1,8 @@
 const button = document.querySelector('#nav-icon3');
 const nav = document.querySelector("#nav");
-const header = document.getElementsByTagName('header');
+const header = document.querySelector("#header");
 const links = document.getElementsByClassName('nav_link');
+const scroll = document.getElementsByClassName('scroll');
 
 button.onclick = function() {
   	button.classList.toggle('open');
@@ -25,6 +26,21 @@ for (let i = 0; i < links.length; i++) {
 window.onresize = function() {
     header.style.height = `${window.innerHeight}px`;
     nav.style.height = `${window.innerHeight}px`;
+    // console.log(window.innerHeight);
+    // console.log(hxouse.offsetTop);
+}
+
+window.onscroll = function () {
+    for (let i = 0; i < scroll.length; i++) {
+        let elem = scroll[i].getBoundingClientRect();
+        if (elem.top < (window.innerHeight * .8)) {
+            scroll[i].style.transform = "translateY(0px)"
+            scroll[i].style.opacity = "1"
+        } else {
+            scroll[i].style.transform = "translateY(100px)"
+            scroll[i].style.opacity = "0"
+        }
+    }
 }
 
 window.onresize(); // called to initially set the height
@@ -36,8 +52,4 @@ window.addEventListener("resize", function() {
    } else {
    	nav.style.display = "none";
    }
-});
-
-document.addEventListener("DOMContentLoaded", function() { 
-    
 });
