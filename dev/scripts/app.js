@@ -33,7 +33,7 @@ window.onresize = function() {
 window.onscroll = function () {
     for (let i = 0; i < scroll.length; i++) {
         let elem = scroll[i].getBoundingClientRect();
-        if (elem.top < (window.innerHeight * .8)) {
+        if (elem.top < (window.innerHeight * .9)) {
             scroll[i].style.transform = "translateY(0px)"
             scroll[i].style.opacity = "1"
         } else {
