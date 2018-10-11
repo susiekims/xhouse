@@ -11,10 +11,12 @@
 		<text transform="matrix(0 1 -1 0 119.6478 -978.2938)" fill="none" stroke="#FFFFFF" stroke-width="3" font-family="'Eurostile'" font-size="269.9983">&amp; SCHEDULE</text>
 </g>
 
+<defs>
 <style type="text/css">
 	@font-face {
 	font-family: Eurostile;
 	src: url(../../../public/assets/fonts/EurostileUnicaseLTPro.otf);
 }
 </style>
+</defs>
 </svg>
