@@ -54,43 +54,34 @@ const events = () => {
 
         if (window.innerWidth < 625 ) {
             nav.style.display = "none";
-            for (let i = 0; i < scroll.length; i++) {
+        }
+
+        let pageBottom = document.body.scrollTop + window.innerHeight;
+
+        for (let i = 0; i < scroll.length; i++) {
+            let elem = scroll[i].getBoundingClientRect();
+            if (elem.top < (pageBottom * .95)) {
                 scroll[i].classList.add('scroll-effect');
+            } else if (elem.bottom < 0 || elem.top > pageBottom) {
+                scroll[i].classList.remove('scroll-effect');
             }
-            for (let i = 0; i < scroll2.length; i++) {
+        }
+
+        for (let i = 0; i < scroll2.length; i++) {
+            let elem = scroll2[i].getBoundingClientRect();
+            if (elem.top < (pageBottom * .95)) {
                 scroll2[i].classList.add('scroll-effect');
+            } else if (elem.bottom < 0 || elem.top > pageBottom) {
+                scroll2[i].classList.remove('scroll-effect');
             }
-            for (let i = 0; i < scroll3.length; i++) {
+        }
+
+        for (let i = 0; i < scroll3.length; i++) {
+            let elem = scroll3[i].getBoundingClientRect();
+            if (elem.top < (pageBottom * .95)) {
                 scroll3[i].classList.add('scroll-effect');
-            }
-        } else {
-            let pageBottom = document.body.scrollTop + window.innerHeight;
-    
-            for (let i = 0; i < scroll.length; i++) {
-                let elem = scroll[i].getBoundingClientRect();
-                if (elem.top < (pageBottom * .95)) {
-                    scroll[i].classList.add('scroll-effect');
-                } else if (elem.bottom < 0 || elem.top > pageBottom) {
-                    scroll[i].classList.remove('scroll-effect');
-                }
-            }
-    
-            for (let i = 0; i < scroll2.length; i++) {
-                let elem = scroll2[i].getBoundingClientRect();
-                if (elem.top < (pageBottom * .95)) {
-                    scroll2[i].classList.add('scroll-effect');
-                } else if (elem.bottom < 0 || elem.top > pageBottom) {
-                    scroll2[i].classList.remove('scroll-effect');
-                }
-            }
-    
-            for (let i = 0; i < scroll3.length; i++) {
-                let elem = scroll3[i].getBoundingClientRect();
-                if (elem.top < (pageBottom * .95)) {
-                    scroll3[i].classList.add('scroll-effect');
-                } else if (elem.bottom < 0 || elem.top > pageBottom) {
-                    scroll3[i].classList.remove('scroll-effect');
-                }
+            } else if (elem.bottom < 0 || elem.top > pageBottom) {
+                scroll3[i].classList.remove('scroll-effect');
             }
         }
     }
