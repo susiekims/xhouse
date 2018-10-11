@@ -738,6 +738,7 @@ footer {
     right: 0;
     top: 0;
     bottom: 0;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.9); }
   p, .button {
     font-size: 2rem; }
@@ -748,7 +749,7 @@ footer {
   h3 {
     font-size: 3rem; }
   .hx001 {
-    top: -15px; } }
+    top: -30px; } }
 
 @media (max-width: 420px) {
   .program-schedule .schedule {

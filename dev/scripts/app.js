@@ -66,15 +66,6 @@ const events = () => {
 
         let pageBottom = document.body.scrollTop + window.innerHeight;
 
-        // for (let i = 0; i < scroll.length; i++) {
-        //     let elem = scroll[i].getBoundingClientRect();
-        //     if (elem.top < (pageBottom * .95)) {
-        //         scroll[i].classList.add('scroll-effect');
-        //     } else {
-        //         scroll[i].classList.remove('scroll-effect');
-        //     }
-        // }
-
         for (let i = 0; i < scroll.length; i++) {
             let elem = scroll[i].getBoundingClientRect();
             if (elem.top < (pageBottom * .95)) {
@@ -109,6 +100,14 @@ const events = () => {
             }
         }
     
+        // for (let i = 0; i < scroll.length; i++) {
+        //     let elem = scroll[i].getBoundingClientRect();
+        //     if (elem.top < (pageBottom * .95)) {
+        //         scroll[i].classList.add('scroll-effect');
+        //     } else {
+        //         scroll[i].classList.remove('scroll-effect');
+        //     }
+        // }
 
         // for (let i = 0; i < scroll2.length; i++) {
         //     let elem = scroll2[i].getBoundingClientRect();
