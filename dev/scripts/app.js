@@ -62,7 +62,7 @@ const events = () => {
             let elem = scroll[i].getBoundingClientRect();
             if (elem.top < (pageBottom * .95)) {
                 scroll[i].classList.add('scroll-effect');
-            } else if (elem.bottom < 0 || elem.top > pageBottom) {
+            } else {
                 scroll[i].classList.remove('scroll-effect');
             }
         }
@@ -71,7 +71,7 @@ const events = () => {
             let elem = scroll2[i].getBoundingClientRect();
             if (elem.top < (pageBottom * .95)) {
                 scroll2[i].classList.add('scroll-effect');
-            } else if (elem.bottom < 0 || elem.top > pageBottom) {
+            } else {
                 scroll2[i].classList.remove('scroll-effect');
             }
         }
@@ -80,7 +80,7 @@ const events = () => {
             let elem = scroll3[i].getBoundingClientRect();
             if (elem.top < (pageBottom * .95)) {
                 scroll3[i].classList.add('scroll-effect');
-            } else if (elem.bottom < 0 || elem.top > pageBottom) {
+            } else {
                 scroll3[i].classList.remove('scroll-effect');
             }
         }
