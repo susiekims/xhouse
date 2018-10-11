@@ -62,69 +62,45 @@ const events = () => {
         if (window.innerWidth < 625 ) {
             nav.style.display = "none";
         }
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            return;
+        } else {
+            let pageBottom = document.body.scrollTop + window.innerHeight;
 
-        let pageBottom = document.body.scrollTop + window.innerHeight;
+            for (let i = 0; i < scroll.length; i++) {
+                let elem = scroll[i].getBoundingClientRect();
+                if (elem.top < (pageBottom * .95)) {
+                    scroll[i].style.opacity = 1;
+                    scroll[i].style.transform = 'translateY(0px)';
+                } else {
+                    scroll[i].style.opacity = 0;
+                    scroll[i].style.transform = 'translateY(50px)';
 
-        for (let i = 0; i < scroll.length; i++) {
-            let elem = scroll[i].getBoundingClientRect();
-            if (elem.top < (pageBottom * .95)) {
-                scroll[i].style.opacity = 1;
-                scroll[i].style.transform = 'translateY(0px)';
-            } else {
-                scroll[i].style.opacity = 0;
-                scroll[i].style.transform = 'translateY(50px)';
+                }
+            }
 
+            for (let i = 0; i < scroll2.length; i++) {
+                let elem = scroll2[i].getBoundingClientRect();
+                if (elem.top < (pageBottom * .9)) {
+                    scroll2[i].style.opacity = 1;
+                    scroll2[i].style.transform = 'translateY(0px)';
+                } else {
+                    scroll2[i].style.opacity = 0;
+                    scroll2[i].style.transform = 'translateY(50px)';
+                }
+            }
+
+            for (let i = 0; i < scroll3.length; i++) {
+                let elem = scroll3[i].getBoundingClientRect();
+                if (elem.top < (pageBottom * .85)) {
+                    scroll3[i].style.opacity = 1;
+                    scroll3[i].style.transform = 'translateY(0px)';
+                } else {
+                    scroll3[i].style.opacity = 0;
+                    scroll3[i].style.transform = 'translateY(50px)';
+                }
             }
         }
-
-        for (let i = 0; i < scroll2.length; i++) {
-            let elem = scroll2[i].getBoundingClientRect();
-            if (elem.top < (pageBottom * .9)) {
-                scroll2[i].style.opacity = 1;
-                scroll2[i].style.transform = 'translateY(0px)';
-            } else {
-                scroll2[i].style.opacity = 0;
-                scroll2[i].style.transform = 'translateY(50px)';
-            }
-        }
-
-        for (let i = 0; i < scroll3.length; i++) {
-            let elem = scroll3[i].getBoundingClientRect();
-            if (elem.top < (pageBottom * .85)) {
-                scroll3[i].style.opacity = 1;
-                scroll3[i].style.transform = 'translateY(0px)';
-            } else {
-                scroll3[i].style.opacity = 0;
-                scroll3[i].style.transform = 'translateY(50px)';
-            }
-        }
-    
-        // for (let i = 0; i < scroll.length; i++) {
-        //     let elem = scroll[i].getBoundingClientRect();
-        //     if (elem.top < (pageBottom * .95)) {
-        //         scroll[i].classList.add('scroll-effect');
-        //     } else {
-        //         scroll[i].classList.remove('scroll-effect');
-        //     }
-        // }
-
-        // for (let i = 0; i < scroll2.length; i++) {
-        //     let elem = scroll2[i].getBoundingClientRect();
-        //     if (elem.top < (pageBottom * .95)) {
-        //         scroll2[i].classList.add('scroll-effect');
-        //     } else {
-        //         scroll2[i].classList.remove('scroll-effect');
-        //     }
-        // }
-
-        // for (let i = 0; i < scroll3.length; i++) {
-        //     let elem = scroll3[i].getBoundingClientRect();
-        //     if (elem.top < (pageBottom * .95)) {
-        //         scroll3[i].classList.add('scroll-effect');
-        //     } else {
-        //         scroll3[i].classList.remove('scroll-effect');
-        //     }
-        // }
     }
 }
 

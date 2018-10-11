@@ -526,11 +526,12 @@ nav a:first-child {
 
 .program-schedule {
   padding-top: 20px;
-  position: relative;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
   .program-schedule .content {
     display: grid;
     width: 65%;
+    position: relative;
     max-width: 800px;
     min-width: 300px;
     grid-template-rows: repeat(auto-fill);
@@ -543,7 +544,6 @@ nav a:first-child {
     max-width: 300px;
     position: absolute;
     right: 3%;
-    top: -15px;
     z-index: -1; }
     .program-schedule .program_title h2 {
       font-size: 15rem; }
@@ -581,7 +581,7 @@ nav a:first-child {
   opacity: .5;
   position: absolute;
   width: 350px;
-  top: 50%;
+  bottom: 35%;
   transform-origin: top left;
   transform: rotate(-90deg); }
 
@@ -596,6 +596,8 @@ nav a:first-child {
   margin-bottom: 50px; }
 
 .site-three {
+  position: absolute;
+  bottom: 40%;
   width: 150px; }
 
 .partners h2 {
