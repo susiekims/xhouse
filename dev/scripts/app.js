@@ -56,41 +56,100 @@ const events = () => {
             nav.style.display = "none";
         }
 
+    //     let pageTop = $(document).scrollTop()
+    // let pageBottom = pageTop + $(window).height()
+    // let markers = $(".scroll")
+    // for (let i = 0; i < markers.length; i++) {
+    //     let marker = markers[i]
+    //     if ($(marker).position().top < pageBottom) {
+    //         $(marker).addClass("visible")
+    //     } else {
+    //         $(marker).removeClass("visible")
+    //     }
+// }
+    let pageBottom = document.body.scrollTop + window.innerHeight;
+
         for (let i = 0; i < scroll.length; i++) {
             let elem = scroll[i].getBoundingClientRect();
-            if (elem.top < (window.innerHeight * .9)) {
-                scroll[i].style.transform = "translateY(0px)"
-                scroll[i].style.opacity = "1"
-    
+            if (elem.top < (pageBottom * .95)) {
+                scroll[i].classList.add('scroll-effect');
             } else {
-                scroll[i].style.transform = "translateY(100px)"
-                scroll[i].style.opacity = "0"
+                scroll[i].classList.remove('scroll-effect');
             }
         }
-    
+
         for (let i = 0; i < scroll2.length; i++) {
             let elem = scroll2[i].getBoundingClientRect();
-            if (elem.top < (window.innerHeight * .8)) {
-                scroll2[i].style.transform = "translateY(0px)"
-                scroll2[i].style.opacity = "1"
+            if (elem.top < (pageBottom * .95)) {
+                scroll2[i].classList.add('scroll-effect');
     
             } else {
-                scroll2[i].style.transform = "translateY(100px)"
-                scroll2[i].style.opacity = "0"
+                scroll2[i].classList.remove('scroll-effect');
             }
         }
-    
+
         for (let i = 0; i < scroll3.length; i++) {
             let elem = scroll3[i].getBoundingClientRect();
-            if (elem.top < (window.innerHeight * .7)) {
-                scroll3[i].style.transform = "translateY(0px)"
-                scroll3[i].style.opacity = "1"
+            if (elem.top < (pageBottom * .95)) {
+                scroll3[i].classList.add('scroll-effect');
     
             } else {
-                scroll3[i].style.transform = "translateY(100px)"
-                scroll3[i].style.opacity = "0"
+                scroll3[i].classList.remove('scroll-effect');
             }
         }
+
+        // for (let i = 0; i < scroll2.length; i++) {
+        //     let elem = scroll2[i].getBoundingClientRect();
+        //     if (elem.top < (pageBottom * .9)) {
+        //         scroll2[i].classList.add('scroll-effect');
+    
+        //     } else {
+        //         scroll2[i].classList.remove('scroll-effect');
+        //     }
+        // }
+
+        // for (let i = 0; i < scroll.length; i++) {
+        //     let elem = scroll3[i].getBoundingClientRect();
+        //     if (elem.top < (pageBottom * .9)) {
+        //         scroll3[i].classList.add('scroll-effect');
+    
+        //     } else {
+        //         scroll3[i].classList.remove('scroll-effect');
+        //     }
+        // }
+
+        // for (let i = 0; i < scroll2.length; i++) {
+        //     let elem = scroll2[i].getBoundingClientRect();
+        //     if (elem.top < (window.innerHeight * .9)) {
+        //         scroll2[i].classList.add('scroll-effect');
+    
+        //     } else {
+        //         scroll2[i].classList.remove('scroll-effect');
+        //     }
+        // }
+
+        // for (let i = 0; i < scroll3.length; i++) {
+        //     let elem = scroll3[i].getBoundingClientRect();
+        //     if (elem.top < (window.innerHeight * .9)) {
+        //         scroll3[i].classList.add('scroll-effect');
+    
+        //     } else {
+        //         scroll3[i].classList.remove('scroll-effect');
+        //     }
+        // }
+    
+    
+        // for (let i = 0; i < scroll3.length; i++) {
+        //     let elem = scroll3[i].getBoundingClientRect();
+        //     if (elem.top < (window.innerHeight * .7)) {
+        //         scroll3[i].style.transform = "translateY(0px)"
+        //         scroll3[i].style.opacity = "1"
+    
+        //     } else {
+        //         scroll3[i].style.transform = "translateY(100px)"
+        //         scroll3[i].style.opacity = "0"
+        //     }
+        // }
     }
 }
 
@@ -102,5 +161,7 @@ const init = () => {
     showNav();
 }
 
-init();
+document.addEventListener("DOMContentLoaded", function(event) {
+    init();
+});
 
