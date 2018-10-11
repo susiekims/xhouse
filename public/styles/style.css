@@ -177,7 +177,7 @@ h4 {
 
 h3 {
   font-size: 6rem;
-  line-height: 0.8; }
+  line-height: .9; }
 
 p {
   font-size: 3rem; }
@@ -396,9 +396,11 @@ nav a:first-child {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-45%, -50%);
+  transform: translate(-50%, -50%);
   z-index: -2;
-  width: 60%; }
+  max-width: 600px;
+  min-width: 275px;
+  width: 20%; }
 
 @keyframes intro-down {
   0% {
@@ -440,7 +442,7 @@ nav a:first-child {
 
 .hxouse-title {
   width: 25%;
-  min-width: 100px;
+  min-width: 140px;
   max-width: 300px;
   position: absolute;
   right: 2.5%;
@@ -457,7 +459,8 @@ nav a:first-child {
 
 .hx1 {
   width: 70%;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  min-width: 300px; }
 
 .hx2 {
   width: calc((100% - 10px) / 3);
@@ -478,10 +481,10 @@ nav a:first-child {
 
 .background {
   width: 20vw;
-  height: 100vw;
-  max-height: 1500px;
+  height: 100%;
+  min-width: 150px;
   position: absolute;
-  transform: translate(30px, 45px);
+  left: 5%;
   opacity: 0.3;
   z-index: -1; }
 
