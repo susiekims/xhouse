@@ -62,11 +62,10 @@ const events = () => {
         if (window.innerWidth < 625 ) {
             nav.style.display = "none";
         }
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            return;
-        } else {
+        // if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        //     return;
+        // } else {
             let pageBottom = document.body.scrollTop + window.innerHeight;
-
             for (let i = 0; i < scroll.length; i++) {
                 let elem = scroll[i].getBoundingClientRect();
                 if (elem.top < (pageBottom * .95)) {
@@ -101,7 +100,7 @@ const events = () => {
                 }
             }
         }
-    }
+    // }
 }
 
 const init = () => {
