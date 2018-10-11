@@ -148,8 +148,7 @@ body {
   font-size: 1rem;
   font-family: Accidalia;
   letter-spacing: 0.03rem;
-  background: black;
-  /*overflow-wrap: break-word;*/
+  background: #0d0d0d;
   color: #fff;
   -webkit-font-smoothing: antialiased; }
 
@@ -169,7 +168,7 @@ li {
 
 h5 {
   font-size: 6rem;
-  color: #0d0d0d;
+  color: #0e0e0e;
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; }
 
 h4 {
@@ -186,7 +185,7 @@ nav li a {
   font-size: 2rem; }
   nav li a:hover {
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-    color: black; }
+    color: #0e0e0e; }
 
 li {
   font-size: 3rem; }
@@ -196,7 +195,7 @@ li {
   font-family: Google Sans;
   font-size: 6rem;
   background: #fff;
-  color: black;
+  color: #0e0e0e;
   padding: .5rem 4rem;
   text-transform: uppercase;
   font-weight: bold;
@@ -492,12 +491,13 @@ nav a:first-child {
   position: relative;
   margin-bottom: 100px; }
   .panel-discussion .column {
-    position: relative;
     min-width: 150px; }
     .panel-discussion .column > * {
       margin-bottom: 30px; }
     .panel-discussion .column .button {
-      margin-top: 40px; }
+      position: absolute;
+      bottom: 0;
+      transform: translateY(150%); }
   .panel-discussion .column {
     width: 40%; }
   .panel-discussion .content {
@@ -732,9 +732,10 @@ footer {
     padding: 0;
     margin: 0;
     position: fixed;
-    top: 0;
     left: 0;
-    width: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
     background: rgba(0, 0, 0, 0.9); }
   p, .button {
     font-size: 2rem; }

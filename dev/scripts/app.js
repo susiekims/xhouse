@@ -31,22 +31,30 @@ const closeDropdown = () => {
 
 const setViewportHeight = () => {
     header.style.height = `${window.innerHeight}px`;
-    nav.style.height = `${window.innerHeight}px`;
 }
 
 const showNav = () => {
     if (window.innerWidth > 625 ) {
         nav.style.display = "flex";
         button.classList.remove('open');
+        document.getElementById('panel-title').setAttribute('data', "./public/assets/images/panel-discussions.svg");
     } else {
-           nav.style.display = "none";
+        nav.style.display = "none";
+        document.getElementById('panel-title').setAttribute('data', "./public/assets/images/panel-discussions2.svg");
     }
+}
+
+const setColumnHeight = () => {
+    const v = document.getElementById('column').clientHeight;
+    console.log(v);
+    document.getElementsByClassName('gg')[0].style.height = `${v}px`;
 }
 
 const events = () => {
     window.onresize = function() {
         setViewportHeight();
         showNav();
+        setColumnHeight();
     }
     
     window.onscroll = function () {
@@ -60,7 +68,7 @@ const events = () => {
 
         for (let i = 0; i < scroll.length; i++) {
             let elem = scroll[i].getBoundingClientRect();
-            if (elem.top < (window.innerHeight * .95)) {
+            if (elem.top < (pageBottom * .95)) {
                 scroll[i].classList.add('scroll-effect');
             } else {
                 scroll[i].classList.remove('scroll-effect');
@@ -69,7 +77,7 @@ const events = () => {
 
         for (let i = 0; i < scroll2.length; i++) {
             let elem = scroll2[i].getBoundingClientRect();
-            if (elem.top < (window.innerHeight* .95)) {
+            if (elem.top < (pageBottom * .95)) {
                 scroll2[i].classList.add('scroll-effect');
             } else {
                 scroll2[i].classList.remove('scroll-effect');
@@ -78,7 +86,7 @@ const events = () => {
 
         for (let i = 0; i < scroll3.length; i++) {
             let elem = scroll3[i].getBoundingClientRect();
-            if (elem.top < (window.innerHeight * .95)) {
+            if (elem.top < (pageBottom * .95)) {
                 scroll3[i].classList.add('scroll-effect');
             } else {
                 scroll3[i].classList.remove('scroll-effect');
@@ -93,6 +101,7 @@ const init = () => {
     toggleDropdown();
     closeDropdown();
     showNav();
+    setColumnHeight();
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {

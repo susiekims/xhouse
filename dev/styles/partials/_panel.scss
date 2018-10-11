@@ -3,16 +3,16 @@
     margin-bottom: 100px;
 
     .column {
-        position: relative;
         min-width: 150px;
 
         &> * {
             margin-bottom: 30px;
         } 
 
-
         .button {
-            margin-top: 40px;
+            position: absolute;
+            bottom: 0;
+            transform: translateY(150%);
         }
     }
 
