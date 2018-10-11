@@ -46,7 +46,6 @@ const showNav = () => {
 
 const setColumnHeight = () => {
     const v = document.getElementById('column').clientHeight;
-    console.log(v);
     document.getElementsByClassName('gg')[0].style.height = `${v}px`;
 }
 
