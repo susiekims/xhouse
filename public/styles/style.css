@@ -379,6 +379,16 @@ nav a:first-child {
   width: 50px;
   height: 50px; }
 
+.chrome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+  max-width: 600px;
+  min-width: 275px;
+  width: 30%; }
+
 .title {
   width: 30%;
   max-width: 600px;
@@ -390,16 +400,6 @@ nav a:first-child {
   animation: intro-up .8s .5s ease-in-out;
   animation-fill-mode: both;
   z-index: -1; }
-
-.chrome {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -2;
-  max-width: 600px;
-  min-width: 275px;
-  width: 30%; }
 
 @keyframes intro-down {
   0% {
