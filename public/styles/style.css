@@ -491,15 +491,14 @@ nav a:first-child {
   position: relative;
   margin-bottom: 100px; }
   .panel-discussion .column {
-    min-width: 150px; }
+    min-width: 150px;
+    width: 40%; }
     .panel-discussion .column > * {
       margin-bottom: 30px; }
     .panel-discussion .column .button {
       position: absolute;
       bottom: 0;
       transform: translateY(150%); }
-  .panel-discussion .column {
-    width: 40%; }
   .panel-discussion .content {
     display: flex;
     width: 60%;
@@ -583,7 +582,7 @@ nav a:first-child {
   opacity: .5;
   position: absolute;
   width: 350px;
-  bottom: 35%;
+  bottom: 50%;
   transform-origin: top left;
   transform: rotate(-90deg); }
 
@@ -599,7 +598,7 @@ nav a:first-child {
 
 .site-three {
   position: absolute;
-  bottom: 40%;
+  bottom: 50%;
   width: 150px; }
 
 .partners h2 {
@@ -711,7 +710,7 @@ footer {
     transform: rotate(0deg); } }
 
 @media (max-width: 625px) {
-  .program-schedule .scedule {
+  .program-schedule .schedule {
     width: 60%; }
   footer h4 {
     font-size: 1.2rem; }
