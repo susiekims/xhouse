@@ -766,13 +766,10 @@ footer {
     width: 100%; } }
 
 .scroll2 {
-  transform: translateY(50px);
   transition: transform .8s ease-in-out, opacity .8s ease-in-out; }
 
 .scroll3 {
-  transform: translateY(50px);
   transition: transform 1.1s ease-in-out, opacity 1.1s ease-in-out; }
 
 .scroll {
-  transform: translateY(50px);
   transition: transform .5s ease-in-out, opacity .5s ease-in-out; }
