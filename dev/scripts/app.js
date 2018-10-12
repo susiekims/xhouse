@@ -1,5 +1,6 @@
 const button = document.querySelector('#nav-icon3');
-const nav = document.querySelector("#nav");
+// const nav = document.querySelector("#nav");
+const nav = document.getElementsByTagName('nav')[0];
 const header = document.querySelector("#header");
 const links = document.getElementsByClassName('nav_link');
 const scroll = document.getElementsByClassName('scroll');
@@ -19,7 +20,7 @@ const toggleDropdown = () => {
 
 const closeDropdown = () => {
     for (let i = 0; i < links.length; i++) {
-        if (window.innerWidth < 620) {
+        if (window.innerWidth < 625) {
             links[i].onclick = function(){
                 console.log('click');
                 nav.style.display = "none";
@@ -31,6 +32,7 @@ const closeDropdown = () => {
 
 const setViewportHeight = () => {
     header.style.height = `${window.innerHeight}px`;
+    nav.style.height = `${window.innerHeight}px`;
 }
 
 const showNav = () => {
@@ -41,6 +43,7 @@ const showNav = () => {
     } else {
         nav.style.display = "none";
         document.getElementById('panel-title').setAttribute('data', "./public/assets/images/panel-discussions2.svg");
+        document.getElementById('footer').innerHTML = `<h4 id="footer">open hxouse <br> powered by google pixel 3<br>all rights reserved 2018.</h4>`
     }
 }
 
@@ -51,7 +54,7 @@ const setColumnHeight = () => {
 
 const events = () => {
     window.onresize = function() {
-        setViewportHeight();
+        // setViewportHeight();
         showNav();
         setColumnHeight();
     }
@@ -104,7 +107,7 @@ const events = () => {
 }
 
 const init = () => {
-    setViewportHeight();
+    // setViewportHeight();
     events();
     toggleDropdown();
     closeDropdown();

@@ -97,20 +97,26 @@
 
 	.disclaimer {
 		position: static;
-		width: 100%;
+		width: 60%;
 		transform: rotate(0deg);
+	}
+
+	.program-schedule .content {
+		grid-template-columns: 20% 40% 30%;
 	}
 }
 
 
 @media (max-width: 625px) {
-	.program-schedule .schedule {
-		width: 60%;
-	}
 	
 	footer h4{
 		font-size: 1.2rem;
 	}
+
+	.schedule {
+		width: 60%;
+	}
+
 	.dome {
 		width: 100%;
 		margin: 50px auto;
@@ -121,42 +127,46 @@
 		z-index: 6;
 	}
 
-	nav li {
-		text-align: center;
-		height: calc(100vh / 12);
-		position: relative;
-
-		a {
-			font-size: 3rem;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			width: 100%;
-			transform: translate(-50%, -50%);
-		}
-	}
-
-	nav ul {
+	nav {
 		display: none;
-		flex-direction: column;
-		justify-content: center;
-		z-index: 5;
-		padding: 0;
-		margin: 0;
 		position: fixed;
 		left: 0;
 		right: 0;
 		top: 0;
 		bottom: 0;
-		height: 100vh;
-		background: rgba(0, 0, 0, 0.9);
+		background: rgba(14, 14, 14, 0.9);
+		z-index: 5;
+	}
+
+	nav ul {
+		flex-direction: column;
+		animation: none;
+		text-align: center;
+		width: 100%;
+	}
+
+	nav li {
+		font-size: 20px;
+		border-bottom: 1px solid rgba(256, 256, 256, 0.5);
+		height: 25vh;
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+
+	nav li a {
+		display: block;
+		padding: calc((25vh - 3rem) / 2) 0;
+		font-size: 3rem;
 	}
 
 	p, .button {
 		font-size: 2rem;
 	}
+
 	h5 {
-			font-size: 4rem;
+		font-size: 4rem;
 	}
 
 	.program-schedule a {
@@ -168,28 +178,10 @@
 	}
 
 	.hx001 {
-		top: -30px;
+		top: -25px;
+		width: 80%;
 	}
 }
-
-@media (max-width: 420px) {
-
-	.program-schedule .schedule {
-    	width: 50%;
-        margin-left: 0;
-	}
-
-
-	.program-schedule .content {
-		grid-template-columns: 3fr 4fr 3fr;
-	}
-
-	.program-schedule .column {
-		width: 100%;
-	}
-}
-
-
 
 .scroll2 {
 	// opacity: 0;
