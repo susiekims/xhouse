@@ -54,7 +54,7 @@ const setColumnHeight = () => {
 
 const events = () => {
     window.onresize = function() {
-        // setViewportHeight();
+        setViewportHeight();
         showNav();
         setColumnHeight();
     }
@@ -107,7 +107,7 @@ const events = () => {
 }
 
 const init = () => {
-    // setViewportHeight();
+    setViewportHeight();
     events();
     toggleDropdown();
     closeDropdown();
