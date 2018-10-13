@@ -106,12 +106,28 @@ const events = () => {
     }
 }
 
+const swapVid = () => {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        document.getElementById('carousel').innerHTML = `
+        <img class="hx1" src="./public/assets/images/hxouselive-carousel-placeholder_4.gif">
+        `
+    } else {
+        document.getElementById('carousel').innerHTML = `
+        <video loop class="hx1" autoplay>
+            <source src="./public/assets/images/HXOUSE-CAROUSEL-0e0e0e.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video> 
+        `
+    }
+}
+
 const init = () => {
     setViewportHeight();
     events();
     toggleDropdown();
     closeDropdown();
     showNav();
+    swapVid();
     setColumnHeight();
 }
 
