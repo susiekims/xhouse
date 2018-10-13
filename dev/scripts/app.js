@@ -65,9 +65,9 @@ const events = () => {
         if (window.innerWidth < 625 ) {
             nav.style.display = "none";
         }
-        // if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        //     return;
-        // } else {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            return;
+        } else {
             let pageBottom = document.body.scrollTop + window.innerHeight;
             for (let i = 0; i < scroll.length; i++) {
                 let elem = scroll[i].getBoundingClientRect();
@@ -103,7 +103,22 @@ const events = () => {
                 }
             }
         }
-    // }
+    }
+}
+
+const swapVid = () => {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        document.getElementById('carousel').innerHTML = `
+        <img class="hx1" src="./public/assets/images/hxouselive-carousel-placeholder_4.gif">
+        `
+    } else {
+        document.getElementById('carousel').innerHTML = `
+        <video loop class="hx1" autoplay>
+            <source src="./public/assets/images/HXOUSE-CAROUSEL-0e0e0e.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video> 
+        `
+    }
 }
 
 const init = () => {
@@ -112,6 +127,7 @@ const init = () => {
     toggleDropdown();
     closeDropdown();
     showNav();
+    swapVid();
     setColumnHeight();
 }
 
